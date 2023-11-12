@@ -63,6 +63,7 @@ public class Journal
                 }
                 else
                 {   
+                    Console.WriteLine();
                     Console.WriteLine($"{line}");
                 }
             }
@@ -72,7 +73,7 @@ public class Journal
         catch (Exception ex)
         {
             Console.WriteLine($"Error loading the file: {ex.Message}");
-
+            // Log or handle the exception
         }
 
     }

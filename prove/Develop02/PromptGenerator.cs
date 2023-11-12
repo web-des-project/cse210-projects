@@ -12,7 +12,7 @@ public class PromptGenerator
         string[] lines = System.IO.File.ReadAllLines(filename);
         foreach (string line in lines)
         {
-            line.Split("?");
+            line.Split(",");
             _prompts.Add(line);
         }
 

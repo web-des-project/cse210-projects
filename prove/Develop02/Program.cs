@@ -10,14 +10,15 @@ class Program
         Journal journal = new Journal();
 
         int userChoice = 0;
-        while (userChoice != 5)
+        while (userChoice != 6)
         {
             Console.WriteLine("Please select one of the following choices.");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
-            Console.WriteLine("5. Quit");
+            Console.WriteLine("5. Motivational Quote");
+            Console.WriteLine("6. Quit");
             Console.Write("What would you like to do? ");
             string userAnswer = Console.ReadLine();
             userChoice = int.Parse(userAnswer);
@@ -59,6 +60,17 @@ class Program
                 string fileName = Console.ReadLine();
 
                 journal.SaveToFile(fileName);
+            }
+            else if (userChoice == 5)
+            {
+                EntryQuote entryQuote = new EntryQuote();
+                QuoteGenerator newPrompt = new QuoteGenerator();
+
+                Console.WriteLine(); 
+
+                entryQuote._quote = newPrompt.GetRandomQuote(); 
+                
+                Console.WriteLine(); 
             }
         }
     }
