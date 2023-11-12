@@ -55,11 +55,9 @@ class Program
             }
             else if (userChoice == 4)
             {
-                // Let the user name a new journal file
                 Console.Write("How would you like to name your file? ");
                 string fileName = Console.ReadLine();
 
-                // Save the file
                 journal.SaveToFile(fileName);
             }
         }
