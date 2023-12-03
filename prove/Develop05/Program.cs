@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+        
+        GoalManager goalManager = new();
+        goalManager.Start();
     }
 }
