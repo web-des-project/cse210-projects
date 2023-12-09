@@ -27,12 +27,5 @@ class Program
             video.GetVideoInfo();
             Console.WriteLine();
         }
-
-        
-
-
-
-
-        
     }
 }
