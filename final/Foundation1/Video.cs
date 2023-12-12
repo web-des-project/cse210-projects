@@ -12,7 +12,6 @@ public class Video
         _title = title;
         _author = author;
         _lenght = lenght;
-
     }
 
     public void AddComment(Comment comment)
