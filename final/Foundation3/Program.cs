@@ -13,6 +13,8 @@ class Program
         Outdoor outdoorEvent = new("Basket hour", "Basket practice with friends", DateTime.Parse("2023-12-19"), TimeSpan.Parse("15:00"), address3, "21°C");
 
         // Standart Details
+        Console.WriteLine("Standart Details:");
+        Console.WriteLine();
         Console.WriteLine(lectureEvent.GetStandardDetails());
         Console.WriteLine();
         Console.WriteLine(receptionEvent.GetStandardDetails());
@@ -20,6 +22,8 @@ class Program
         Console.WriteLine(outdoorEvent.GetStandardDetails());
 
         // Full Details
+        Console.WriteLine("Full Details:");
+        Console.WriteLine();
         Console.WriteLine(lectureEvent.GetFullDetails());
         Console.WriteLine();
         Console.WriteLine(receptionEvent.GetFullDetails());
@@ -27,6 +31,8 @@ class Program
         Console.WriteLine(outdoorEvent.GetFullDetails());
         
         // Short Description
+        Console.WriteLine("Short Description:");
+        Console.WriteLine();
         Console.WriteLine(lectureEvent.GetShortDescription());
         Console.WriteLine();
         Console.WriteLine(receptionEvent.GetShortDescription());

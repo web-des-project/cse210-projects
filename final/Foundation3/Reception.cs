@@ -12,9 +12,7 @@ class Reception : Event
 
     public override string GetFullDetails()
     {
-       return $@"{base.GetFullDetails()}
-       Type: Reception
-       Email: {_email}";
+       return $"{base.GetFullDetails()}\nType: Reception\nEmail: {_email}";
         
     }
 }

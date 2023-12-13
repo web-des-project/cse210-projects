@@ -13,9 +13,7 @@ class Outdoor : Event
 
     public override string GetFullDetails()
     {
-       return $@"{base.GetFullDetails()}
-       Type: Outdoor
-       Weather Forecast: {_weather}";
+       return $"{base.GetFullDetails()}\nType: Outdoor\nWeather Forecast: {_weather}";
         
     }
 }

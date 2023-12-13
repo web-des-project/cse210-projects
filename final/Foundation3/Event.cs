@@ -18,25 +18,17 @@ class Event
 
     public string GetStandardDetails()
     {
-       return $@"
-       Event Title: {_title}
-       Description: {_description}
-       Date: {_date.ToShortDateString()}
-       Time: {_time}
-       Address: {_address}";
+       return $"Event Title: {_title}\nDescription: {_description}\nDate: {_date.ToShortDateString()}\nTime: {_time}\nAddress: {_address}";
     }
 
     public virtual string GetFullDetails()
     {
-    return GetStandardDetails();
+       return GetStandardDetails();
     }
 
     public virtual string GetShortDescription()
     {
-       return $@"
-       Event Type: {GetType().Name}
-       Event Title: {_title}
-       Date: {_date.ToShortDateString()}";
+       return $"Event Type: {GetType().Name}\nEvent Title: {_title}\nDate: {_date.ToShortDateString()}";
     }
 
 }
