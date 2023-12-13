@@ -2,10 +2,10 @@ using System;
 
 public class Video
 {
-    public string _title;
-    public string _author;
-    public int _lenght;
-    public List<Comment> _comments = new();
+    private string _title;
+    private string _author;
+    private int _lenght;
+    private List<Comment> _comments = new();
 
     public Video(string title, string author, int lenght)
     {
