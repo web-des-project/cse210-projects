@@ -35,7 +35,9 @@ public class Video
     public void GetVideoInfo()
     {
         Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"'{_title}' by {_author} / {_lenght} seconds");
+        Console.ResetColor();
         Console.WriteLine();
         if (_comments.Count > 0)
         {

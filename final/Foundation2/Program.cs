@@ -27,18 +27,27 @@ class Program
         order2.AddProduct(product4);
 
         Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("Order 1 billing:");
+        Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"Total Price: {order1.GetTotalPrice()}");
+        Console.ResetColor();
+        
 
         Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("Order 2 billing:");
+        Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"Total Price: {order2.GetTotalPrice()}");
+        Console.ResetColor();
         
     }
 }

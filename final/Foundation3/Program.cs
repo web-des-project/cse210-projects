@@ -13,7 +13,9 @@ class Program
         Outdoor outdoorEvent = new("Basket hour", "Basket practice with friends", DateTime.Parse("2023-12-19"), TimeSpan.Parse("15:00"), address3, "21°C");
 
         // Standart Details
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("\nStandart Details:");
+        Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine(lectureEvent.GetStandardDetails());
         Console.WriteLine();
@@ -22,7 +24,9 @@ class Program
         Console.WriteLine(outdoorEvent.GetStandardDetails());
 
         // Full Details
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("\nFull Details:");
+        Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine(lectureEvent.GetFullDetails());
         Console.WriteLine();
@@ -31,7 +35,9 @@ class Program
         Console.WriteLine(outdoorEvent.GetFullDetails());
         
         // Short Description
+        Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("\nShort Description:");
+        Console.ResetColor();
         Console.WriteLine();
         Console.WriteLine(lectureEvent.GetShortDescription());
         Console.WriteLine();
